@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+
+.navbar {
+    background: transparent !important;
+    padding: 25px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .container-fluid {
+        grid-column: 1 / 13;
+        .navbar-brand {
+            color: $color-white
+        }
+        .collapse {
+            li {
+                margin: 0 20px;
+                a {
+                    color: $color-white;
+                }
+            }
+            .nav__buttons {
+                display: flex;
+                li {
+                    margin: 0 6px;
+                }
+            }
+        }
+    }
+}

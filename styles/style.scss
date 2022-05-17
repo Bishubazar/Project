@@ -1,3 +1,31 @@
-.container-fluid {
-	width: clamp(600px, 70%, 1400px);
+
+@import './sass/components/';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	a {
+		text-decoration: none;
+	}
+	list-style: none;
 }
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	background: linear-gradient(315deg, hsla(207, 73%, 13%, 1) 0%, hsla(267, 100%, 2%, 1) 100%) !important;
+
+}
+.grid__container {
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+}
+.container-fluid {
+  width: clamp(600px, 90%, 1600px);
+}
+
+.navbar-collapse {
+	flex-grow: 0 !important;
+}
+
