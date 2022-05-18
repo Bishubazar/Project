@@ -6,11 +6,12 @@ $color-pink: #e47bb2;
 $color-orange: #fa9246;
 $color-green: #87d8c8;
 $color-white: #fff;
+$color-gray: #171c20;
 
 // Font sizes
-$font-text-main: 18px;
-$font-text-big: 20px;
-$font-medium: 40px;
+$font-text-main: 15px;
+$font-text-big: 16px;
+$font-medium: 30px;
 $font-main: 55px;
 $font-big: 70px;
 
@@ -44,7 +45,7 @@ h6 {
 .text__medium {
 	font-size: $font-text-main;
 	font-weight: 400;
-	opacity: 0.7;
+	opacity: 0.5;
 }
 
 // .main__button {

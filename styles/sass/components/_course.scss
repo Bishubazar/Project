@@ -1,0 +1,56 @@
+@use "../abstracts/" as *;
+
+#course {
+  margin: 50px 0;
+  .container-fluid {
+    .course__wrapper {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 100px;
+      .course__left {
+        grid-column: 1 / 3;
+        @include alignCenter(column, center, baseline);
+        .header__medium {
+          margin-bottom: 20px;
+        }
+        p {
+          margin: 15px 0;
+        }
+        .main__button {
+          margin-top: 20px;
+        }
+      }
+      .course__right {
+        grid-column: 3 / 6;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+
+        .course {
+          background-color: $color-gray;
+          border: 3px solid $color-gray;
+          transition: 0.2s ease;
+          border-radius: 20px;
+          padding: 30px 40px;
+
+          &:hover {
+            border: 3px solid $color-blue;
+            box-shadow: 0px 0px 10px 2px $color-blue;
+          }
+        }
+      }
+    }
+  }
+}
+.top,
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.top {
+  margin-right: 50px;
+}
+.bottom {
+  margin-left: 50px;
+}

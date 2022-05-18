@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+
+#banner {
+  .container-fluid {
+    .banner__wrapper {
+      position: relative;
+      .d-quote {
+        position: absolute;
+        left: 50%;
+        top: -55px;
+        transform: translate(-50%, 0);
+        width: 110px;
+        height: 110px;
+        font-size: 45px;
+      }
+      .banner {
+        position: relative;
+        overflow: hidden;
+        width: clamp(250px, 70%, 700px);
+        background-color: transparent;
+        padding: 40px 50px;
+        @include glass();
+      }
+    }
+  }
+}
