@@ -1,9 +1,13 @@
 @use "../abstracts/" as *;
 
 #banner {
+  margin: 50px 0;
+
   .container-fluid {
+    @include alignCenter(column, center, center);
     .banner__wrapper {
       position: relative;
+      margin: 75px 0;
       .d-quote {
         position: absolute;
         left: 50%;
