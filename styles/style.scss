@@ -97,19 +97,19 @@ li:hover ~ .cursor {
 	&.c-5 {
 		top: 0;
 		right: -10%;
-		width: clamp(150px, 40%, 500px);
+		width: clamp(150px, 25%, 500px);
 		filter: blur(2px);
 	}
 	&.c-4 {
 		top: -200px;
 		left: -10%;
-		width: clamp(150px, 40%, 400px);
+		width: clamp(150px, 25%, 400px);
 		filter: blur(2px);
 	}
 	&.c-6 {
 		top: -10%;
 		right: -2%;
-		width: clamp(50px, 20%, 200px);
+		width: clamp(50px, 15%, 200px);
 	}
 	// backdrop-filter: blur(10px);
 }

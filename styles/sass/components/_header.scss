@@ -2,7 +2,7 @@
 
 #header {
 	width: 100vw;
-	height: 80vh;
+	height: 90vh;
 	background: linear-gradient(
 		315deg,
 		hsla(207, 73%, 13%, 1) 0%,
@@ -55,7 +55,7 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			width: clamp(300px, 60%, 700px);
+			width: clamp(300px, 40%, 700px);
 			transform: translate(-50%, -50%);
 		}
 		.header__side {
