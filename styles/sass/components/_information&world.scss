@@ -1,0 +1,145 @@
+@use '../abstracts/' as *;
+
+.category__copy {
+	.shadow {
+		width: 100%;
+		height: 100%;
+		&::before {
+			content: '';
+			@include stain(55vw, 55vh, $color-blue, 10%, auto, auto, -10%);
+			opacity: 0.8;
+		}
+		&::after {
+			content: '';
+			@include stain(45vw, 50vh, $color-green, 40%, auto, auto, -15%);
+			opacity: 0.8;
+		}
+	}
+	.container-fluid {
+		z-index: 10;
+		position: relative;
+	}
+}
+#information {
+	// height: 50vh;
+}
+
+#world {
+	margin-top: 100px;
+}
+
+.sliderSwiper {
+}
+
+.category__item > .percent {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	font-size: 30px;
+	// &:nth-child(1) {
+	// 	@include blueRgb();
+	// }
+	// &:nth-child(2) {
+	// 	@include orangeRgb();
+	// }
+}
+.sliderSwiper {
+	.swiper-wrapper {
+		.swiper-slide {
+			.percent {
+				// animation: iconRgb 10s infinte
+			}
+			&:nth-child(1) {
+				.percent {
+					@include blueRgb();
+				}
+			}
+			&:nth-child(2) {
+				.percent {
+					@include purpleRgb();
+				}
+			}
+			&:nth-child(3) {
+				.percent {
+					@include tealRgb();
+				}
+			}
+			&:nth-child(4) {
+				.percent {
+					@include orangeRgb();
+				}
+			}
+			&:nth-child(5) {
+				.percent {
+					@include blueRgb();
+				}
+			}
+			&:nth-child(6) {
+				.percent {
+					@include purpleRgb();
+				}
+			}
+			&:nth-child(7) {
+				.percent {
+					@include tealRgb();
+				}
+			}
+		}
+	}
+	.swiper-horizontal > .swiper-pagination-progressbar,
+	.swiper-pagination-progressbar.swiper-pagination-horizontal,
+	.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+	.swiper-vertical
+		> .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+		width: 350px;
+		height: 5px;
+
+		left: 50% !important;
+		bottom: -100px !important;
+		transform: translate(-50%, 190px);
+	}
+	.swiper-pagination-progressbar {
+		background-color: $color-light-gray !important;
+		border-radius: 30px;
+
+		span {
+			background: $color-blue;
+			box-shadow: 0px 0px 10px 2px #0057ff;
+		}
+	}
+}
+
+#progress {
+	.shadow {
+		width: 100%;
+		height: 100%;
+		&::before {
+			content: '';
+			@include stain(25vw, 25vh, #1597bb, 60%, auto, auto, 60%);
+		}
+		&::after {
+			content: '';
+			@include stain(25vw, 25vh, #270082, 40%, auto, auto, 40%);
+			opacity: 0.8;
+		}
+	}
+	.container-fluid {
+		z-index: 10;
+		position: relative;
+		.bar {
+			background-color: $color-gray;
+			width: 25%;
+			.number {
+				font-size: 20px;
+				padding: 10px;
+				border-radius: 50%;
+			}
+		}
+		@media (max-width: 769px) {
+			.bar {
+				width: 100%;
+				margin: 10px;
+			}
+		}
+	}
+}

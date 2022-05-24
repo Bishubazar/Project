@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+#news {
+	margin-top: 150px;
+	.container-fluid {
+		.news__wrapper {
+			.news {
+				background-color: $color-gray;
+				position: relative;
+				transform: 0.4s ease;
+				img {
+					position: absolute;
+					top: -75%;
+					left: 50%;
+					transform: translate(-50%, -10%) scale(0.5);
+					transition: 0.3s ease;
+					object-fit: cover;
+					transform: 0.4s ease;
+				}
+				.text__big {
+					transition: 0.3s ease;
+					padding-top: 30px;
+				}
+				&:hover {
+					img {
+						top: -50%;
+						width: 100%;
+						height: 100%;
+						transform: translate(-50%, -10%) scale(0.9);
+					}
+					.text__big {
+						padding-top: 50px;
+					}
+				}
+			}
+		}
+	}
+}

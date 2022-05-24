@@ -1,0 +1,45 @@
+@use './vars' as *;
+
+@mixin blueRgb() {
+	background: linear-gradient(
+			120deg,
+			rgb(4, 229, 229),
+			rgb(80, 115, 184),
+			rgb(16, 152, 173),
+			rgb(7, 179, 155),
+			rgb(111, 186, 130),
+			rgb(4, 229, 229)
+		)
+		0% 0% / 300% 300%;
+	animation: 3s ease-in-out 0s infinite rgb;
+	&:hover {
+		box-shadow: 0px 0px 10px 2px $color-light-blue;
+	}
+}
+
+@mixin orangeRgb() {
+	background: linear-gradient(120deg, #ffca03, #ff5403, #d0313c, #fff323) 0%
+		0% / 300% 300%;
+	animation: 3s ease-in-out 0s infinite rgb;
+	&:hover {
+		box-shadow: 0px 0px 10px 2px $color-orange;
+	}
+}
+
+@mixin purpleRgb() {
+	background: linear-gradient(120deg, #b689c0, #947ec3, #6a67ce, #b689c0) 0%
+		0% / 300% 300%;
+	animation: 3s ease-in-out 0s infinite rgb;
+	&:hover {
+		box-shadow: 0px 0px 10px 2px $color-pink;
+	}
+}
+
+@mixin tealRgb() {
+	background: linear-gradient(120deg, #2f8f9d, #82dbd8, #3bacb6, #2f8f9d) 0%
+		0% / 300% 300%;
+	animation: 3s ease-in-out 0s infinite rgb;
+	&:hover {
+		box-shadow: 0px 0px 10px 2px $color-green;
+	}
+}

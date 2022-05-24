@@ -12,19 +12,104 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
-	width: 100vw;
+	color: #e0e0e0;
+	overflow-x: hidden;
 	// background: linear-gradient(315deg, hsla(207, 73%, 13%, 1) 0%, hsla(267, 100%, 2%, 1) 100%) !important;
 	background-color: #091018;
 }
+
 .grid__container {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 }
 .container-fluid {
-	width: clamp(600px, 90%, 1400px);
+	width: clamp(300px, 90%, 1400px);
 }
 
 .navbar-collapse {
 	flex-grow: 0 !important;
+}
+.navbar-toggler-icon {
+	// background-image: url(../asssets/images/menu-bar.svg);
+}
+
+.cursor {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #2696e8;
+	border-radius: 50%;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	// mix-blend-mode: difference;
+	z-index: 999;
+	box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: #2696e8;
+		opacity: 0.2;
+		transform: translate(-30%, -30%);
+		border-radius: 50%;
+	}
+}
+li:hover ~ .cursor {
+	transform: scale(2);
+}
+
+.crystal {
+	z-index: 1000;
+	position: absolute;
+	animation: crystalFloating 6s infinite ease;
+	&.c-1 {
+		bottom: -50px;
+		left: -50px;
+		width: clamp(150px, 20%, 250px);
+		filter: blur(2px);
+	}
+	&.c-2 {
+		top: 70px;
+		right: 0px;
+		width: clamp(50px, 20%, 150px);
+		transform: scale(0.8) rotate(10deg);
+	}
+	&.c-3 {
+		bottom: -40%;
+		left: -25%;
+		width: clamp(250px, 40%, 800px);
+		// transform: scale(2.5) rotate(30deg);
+		filter: blur(2px);
+
+		@keyframes crystalFloating {
+			0% {
+				transform: rotate(10deg);
+			}
+			50% {
+				transform: rotate(5deg) translateY(40px);
+			}
+			100% {
+				transform: rotate(10deg);
+			}
+		}
+	}
+	&.c-5 {
+		top: 0;
+		right: -10%;
+		width: clamp(150px, 40%, 500px);
+		filter: blur(2px);
+	}
+	&.c-4 {
+		top: -200px;
+		left: -10%;
+		width: clamp(150px, 40%, 400px);
+		filter: blur(2px);
+	}
+	&.c-6 {
+		top: -10%;
+		right: -2%;
+		width: clamp(50px, 20%, 200px);
+	}
+	// backdrop-filter: blur(10px);
 }

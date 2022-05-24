@@ -1,0 +1,16 @@
+@use './vars' as *;
+
+@mixin stain($width, $height, $bg, $top, $right, $bottom, $left) {
+	position: absolute;
+	width: $width;
+	height: $height;
+	top: $top;
+	left: $left;
+	bottom: $bottom;
+	right: $right;
+	border-radius: 50%;
+	background-color: $bg;
+	backdrop-filter: blur(1000px);
+	transform: translate(-50%, -50%);
+	filter: blur(1000px);
+}

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>WEB Project</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+     <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+     <body>
+          <div class="cursor"></div>
+          <nav class="navbar navbar-expand-lg bg-light">
+
+               <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Skillbox</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                         aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon">
+                              <!-- <i class="fas fa-bars" style="color:yellow ;  font-size: 26px"></i> -->
+                              <!-- <img src="./asssets/images/menu-bar.svg" alt="" type="svg">
+                     <object data="./asssets/images/menu-bar.svg" type="image/svg+xml"></object> -->
+                         </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="navbar-nav">
+                              <li class="nav-item">
+                                   <a class="" href="#">O Skillbox</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="" href="#">Вэбинары</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="" href="#">Журнал</a>
+                              </li>
+
+                              <div class="nav__buttons">
+                                   <li class="nav-item">
+                                        <a class="main__button" href="#">Все курсы <ion-icon
+                                                  name="chevron-forward-outline"></ion-icon></a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="outline__button" href="#">Войти</a>
+                                   </li>
+                              </div>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+          <section id="category" class="category__copy position-relative">
+               <div class="shadow"></div>
+               <div class="container-fluid d-flex flex-column">
+                    <div class="header__main">Направления</div>
+                    <div class="swiper mySwiper">
+                         <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <img src="./asssets/images/tools.png" alt="" class="main__icon" />
+                                        <p class="text__big text-uppercase">ПРОГРАММИРОВАНИЕ</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <img src="./asssets/images/color-wheel.png" alt="" class="main__icon" />
+                                        <p class="text__big text-uppercase">ДИЗАЙН</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <img src="./asssets/images/game-console.png" alt="" class="main__icon" />
+                                        <p class="text__big text-uppercase">игры</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <img src="/asssets/images/digital-campaign.png" alt="" class="main__icon" />
+                                        <p class="text__big text-uppercase">Programmist</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <img src="/asssets/images/digital-campaign.png" alt="" class="main__icon" />
+                                        <p class="text__big text-uppercase">Programmist</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <div class="main__icon">Icon</div>
+                                        <p class="text__big text-uppercase">Programmist</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="swiper-button-next"></div>
+                         <div class="swiper-button-prev"></div>
+                    </div>
+               </div>
+          </section>
+
+          <section id="information" class="my-5">
+               <div class="container-fluid">
+                    <div class="row d-flex flex-column flex-md-row align-items-center">
+                         <div class="col">
+                              <div class="information__content w-75">
+                                   <p class="text__big">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem nesciunt
+                                        accusamus reiciendis quod quam ipsa quas necessitatibus quos debitis est et nam
+                                        quidem, dolor, aspernatur eligendi harum. Quae, minus.
+                                   </p>
+                                   <div class="text__medium mt-4">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel totam nihil vitae
+                                        nobis laboriosam soluta earum unde rem, fugit qui, incidunt consequuntur!
+                                        Tempora a nemo enim vero labore molestias,
+                                   </div>
+                              </div>
+                              <div class="row header__right header__side d-none d-sm-flex mt-5">
+                                   <span class="blue__shadow"></span>
+                                   <div class="col header__info mb-5">
+                                        <h2 class="header__main">561</h2>
+                                        <p class="text__medium">Профессиональных реподавателей</p>
+                                   </div>
+                                   <div class="col  header__info mb-5">
+                                        <h2 class="header__main">170K</h2>
+                                        <p class="text__medium">Студентов по всему миру</p>
+                                   </div>
+                                   <div class="col header__info mb-5">
+                                        <h2 class="header__main">491</h2>
+                                        <p class="text__medium">Образовательная программа</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <video src="./asssets/video/spherevideo_p1MJMksF.mp4" controls autoplay loop
+                                   class="information__video w-100 rounded-5"></video>
+                         </div>
+
+                    </div>
+
+               </div>
+          </section>
+
+          <section id="world">
+               <div class="container-fluid text-center">
+                    <div class="header__medium">Lorem, ipsum dolor.</div>
+                    <div id="world__map"></div>
+                    <img src="./asssets/images/world-map.png" alt="" class="w-100">
+               </div>
+          </section>
+
+          <section id="category" class="my-5">
+               <div class="container-fluid d-flex flex-column justify-content-center text-center">
+                    <div class="header__medium w-75 mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Dolor ab
+                         libero omnis porro!</div>
+                    <div class="swiper sliderSwiper">
+                         <div class="swiper-wrapper position-relative">
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <!-- <img src="./asssets/images/tools.png" alt="" class="main__icon" /> -->
+                                        <p class="percent d-flex justify-content-center align-items-center">
+                                             139</p>
+                                        <p class="text-uppercase">ПРОГРАММИРОВАНИЕ</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <p class="percent d-flex justify-content-center align-items-center">
+                                             139</p>
+                                        <p class="text__big text-uppercase">ДИЗАЙН</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <p class="percent d-flex justify-content-center align-items-center">
+                                             139</p>
+                                        <p class="text__big text-uppercase">игры</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <p class="percent d-flex justify-content-center align-items-center">
+                                             139</p>
+                                        <p class="text__big text-uppercase">Programmist</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <p class="percent d-flex justify-content-center align-items-center">
+                                             139</p>
+                                        <p class="text__big text-uppercase">Programmist</p>
+                                   </div>
+                              </div>
+                              <div class="swiper-slide">
+                                   <div class="category__item d-flex flex-column text-center">
+                                        <p class="percent d-flex justify-content-center align-items-center">
+                                             139</p>
+                                        <p class="text__big text-uppercase">Programmist</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="swiper-button-next"></div>
+                         <div class="swiper-button-prev"></div>
+                         <div class="swiper-pagination pagination__rating"></div>
+                    </div>
+               </div>
+          </section>
+          <section id="progress" class="position-relative">
+               <div class="shadow"></div>
+               <div class="container-fluid">
+                    <h2 class="header__medium text-center">
+                         Lorem, ipsum.
+                    </h2>
+                    <div class="progress__wrapper d-flex flex-column flex-md-row justify-content-between w-100 my-5">
+                         <div class="bar p-5 rounded-5">
+                              <span class="number bg-primary">01</span>
+                              <p class="text__big mt-4 mt-4">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cum.
+                              </p>
+                              <p class="text__medium">
+                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat id neque ut
+                                   repudiandae totam nisi veritatis, asperiores obcaecati praesentium perspiciatis
+                              </p>
+                         </div>
+                         <div class="bar p-5 rounded-5">
+                              <span class="number bg-secondary">02</span>
+                              <p class="text__big mt-4">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cum.
+                              </p>
+                              <p class="text__medium">
+                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat id neque ut
+                                   repudiandae totam nisi veritatis, asperiores obcaecati praesentium perspiciatis
+                              </p>
+                         </div>
+                         <div class="bar p-5 rounded-5">
+                              <span class="number bg-info">03</span>
+                              <p class="text__big mt-4">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cum.
+                              </p>
+                              <p class="text__medium">
+                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat id neque ut
+                                   repudiandae totam nisi veritatis, asperiores obcaecati praesentium perspiciatis
+                              </p>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around w-100 my-0 my-md-5 py-0 py-">
+                         <div class="bar p-0 p-sm-5  rounded-5">
+                              <span class="number bg-info">04</span>
+                              <p class="text__big mt-4">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cum.
+                              </p>
+                              <p class="text__medium">
+                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat id neque ut
+                                   repudiandae totam nisi veritatis, asperiores obcaecati praesentium perspiciatis
+                              </p>
+                         </div>
+                         <div class="bar p-0 p-sm-5  rounded-5">
+                              <span class="number bg-danger">05</span>
+                              <p class="text__big mt-4">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cum.
+                              </p>
+                              <p class="text__medium">
+                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat id neque ut
+                                   repudiandae totam nisi veritatis, asperiores obcaecati praesentium perspiciatis
+                              </p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="circul__2" class="my-5 position-relative">
+               <div class="shadow"></div>
+               <div class="container-fluid">
+                    <div class="row d-flex align-items-center">
+                         <div class="col w-75">
+                              <h2 class="header__medium mb-4">
+                                   Lorem ipsum dolor sit amet consectetur.
+                              </h2>
+                              <p class="text__medium mb-5">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tempore?
+                              </p>
+                              <a href="" class="main__button mt-5">center Career</a>
+                         </div>
+                         <div class="col">
+                              <section id="circular" class="position-relative">
+                                   <div
+                                        class="container-fluid text-center d-flex flex-column justify-content-center align-items-center">
+                                        <div class="circular__wrapper position-relative my-5">
+                                             <img src="./asssets/images/poly.png" alt="Circular Center" />
+                                             <ion-icon name="ribbon-outline"
+                                                  class="float__icon fs-1 p-2 p-sm-3 p-md-4 rounded-circle"></ion-icon>
+                                             <ion-icon name="desktop-outline"
+                                                  class="float__icon fs-1 p-2 p-sm-3 p-md-4 rounded-circle"></ion-icon>
+                                             <ion-icon name="bag-add-outline"
+                                                  class="float__icon fs-1 p-2 p-sm-3 p-md-4 rounded-circle"></ion-icon>
+                                             <ion-icon name="chatbox-ellipses-outline"
+                                                  class="float__icon fs-1 p-2 p-sm-3 p-md-4 rounded-circle">
+                                             </ion-icon>
+                                             <ion-icon name="aperture-outline"
+                                                  class="float__icon fs-1 p-2 p-sm-3 p-md-4 rounded-circle"></ion-icon>
+                                        </div>
+
+                                   </div>
+                              </section>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="news" class="mb-5">
+               <div class="container-fluid">
+                    <div class="row news__wrapper">
+                         <div class="col mt-4">
+                              <div class="news p-5 rounded-4">
+                                   <img src="./asssets/images/news.jpg" class="rounded-5" alt="">
+                                   <p class="text__big">Lorem ipsum dolor sit amet.</p>
+                                   <p class="text__medium">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum consequatur
+                                        veritatis
+                                        tempore tempora. Beatae dolorem cumque ea fugiat hic neque!
+                                   </p>
+                              </div>
+                         </div>
+                         <div class="col mt-4">
+                              <div class="news p-5 rounded-4">
+                                   <img src="./asssets/images/news.jpg" class="rounded-5" alt="">
+                                   <p class="text__big">Lorem ipsum dolor sit amet.</p>
+                                   <p class="text__medium">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum consequatur
+                                        veritatis
+                                        tempore tempora. Beatae dolorem cumque ea fugiat hic neque!
+                                   </p>
+                              </div>
+                         </div>
+                         <div class="col mt-4">
+                              <div class="news p-5 rounded-4">
+                                   <img src="./asssets/images/news.jpg" class="rounded-5" alt="">
+                                   <p class="text__big">Lorem ipsum dolor sit amet.</p>
+                                   <p class="text__medium">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum consequatur
+                                        veritatis
+                                        tempore tempora. Beatae dolorem cumque ea fugiat hic neque!
+                                   </p>
+                              </div>
+                         </div>
+
+
+                    </div>
+               </div>
+          </section>
+          <!-- TODO: FOOTER -->
+          <footer id="footer" class="position-relative">
+               <img src="./asssets/images/colored/crystal-4.png" class="crystal c-4" alt="">
+               <img src="./asssets/images/colored/crystal-6.png" class="crystal c-6" alt="">
+               <div class="footer__input d-none d-md-flex flex-column rounded-4 text-center p-5">
+                    <h2 class="medium__header">Lorem, ipsum dolor.</h2>
+                    <p class="text__medium">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint similique repellat
+                         omnis corporis
+                         amet,
+                         laboriosam quos minima tempora incidunt?
+                    </p>
+                    <form class="py-3 d-none d-sm-flex flex-column flex-sm-row">
+                         <input type="email" placeholder="Имя" class="w-100 w-sm-100 rounded">
+                         <input type="submit" class="p-2 rounded main__button w-100 w-sm-0 mt-3 mt-sm-0">
+                    </form>
+               </div>
+
+               <div class="container-fluid ">
+
+                    <!-- Main Footer content -->
+                    <div class="row">
+
+                         <!-- Footer Left side -->
+                         <div class="col ">
+                              <div class="row">
+                                   <div class="col">
+                                        <div class="d-flex flex-column">
+                                             <form class="py-3 d-flex d-md-none flex-column flex-sm-row">
+                                                  <input type="email" placeholder="Имя" class="w-100 w-sm-100 rounded">
+                                                  <input type="submit"
+                                                       class="p-2 rounded main__button w-100 w-sm-0 mt-3 mt-sm-0">
+                                             </form>
+                                             <div class="d-flex flex-column">
+                                                  <h1 class="fs-5">8 (800) 500-05-22</h1>
+                                                  <p class="text__medium-light">Контактный центр
+                                                  </p>
+                                             </div>
+                                             <div class="d-flex flex-column mt-3">
+                                                  <h1 class="fs-5">+7 499 444 90 36</h1>
+                                                  <p class="text__medium-light">Отдел заботы о студентах
+                                             </div>
+                                             </p>
+                                             <div class="d-flex flex-column mt-3">
+                                                  <p class="text__medium-light"">Москва, Ленинский проспект, дом 6, строение 20
+                                                         </p>
+                                                                              </div>
+                                                          <div class=" d-flex flex-row mt-3">
+                                                       <a href="https://www.facebook.com/" target="_blank">
+                                                            <ion-icon name="logo-facebook"
+                                                                 class="footer__icon rounded-circle"></ion-icon>
+                                                       </a>
+                                                       <a href="https://www.vk.com/" target="_blank">
+                                                            <ion-icon name="logo-vk"
+                                                                 class="footer__icon rounded-circle"></ion-icon>
+                                                       </a>
+                                                       <a href="https://www.youtube.com/" target="_blank">
+                                                            <ion-icon name="logo-youtube"
+                                                                 class="footer__icon rounded-circle"></ion-icon>
+                                                       </a>
+                                                       <a href="https://www.twitter.com/" target="_blank">
+                                                            <ion-icon name="logo-twitter"
+                                                                 class="footer__icon rounded-circle"></ion-icon>
+                                                       </a>
+                                                       <a href="https://www.instagram.com/" target="_blank">
+                                                            <ion-icon name="logo-instagram"
+                                                                 class="footer__icon rounded-circle"></ion-icon>
+                                                       </a>
+                                             </div>
+                                        </div>
+
+                                   </div>
+                                   <div class="col d-none d-sm-flex">
+                                        <div class="d-flex flex-column mt-2">
+                                             <p class="header__medium">
+                                                  <ion-icon name="logo-google-playstore"></ion-icon>
+                                             </p>
+                                             <p class="text__medium-light">Участник Skolkovo</p>
+                                             <p class="header__medium mt-4">
+                                                  <ion-icon name="logo-rss"></ion-icon>
+                                             </p>
+                                             <p class="text__medium-light">Премии Рунета 2018, 2019, 2020
+                                             </p>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+
+                         <!-- Footer right side -->
+                         <div class="col d-none d-md-grid">
+                              <div class="row">
+                                   <div class="col d-flex flex-column">
+                                        <h1 class="fs-5">КУРСЫ</h1>
+                                        <div class="d-flex flex-column mt-2">
+                                             <p class="text__medium-light">Программирование</p>
+                                             <p class="text__medium-light">Дизайн</p>
+                                             <p class="text__medium-light">Маркетинг</p>
+                                             <p class="text__medium-light">Управление</p>
+                                             <p class="text__medium-light">Игры</p>
+                                             <p class="text__medium-light">Мультимедиа</p>
+                                             <p class="text__medium-light">Для бизнеса</p>
+                                        </div>
+                                   </div>
+                                   <div class="col d-flex flex-column">
+                                        <h1 class="fs-5">O SKILLBOX</h1>
+                                        <div class="d-flex flex-column mt-2">
+                                             <p class="text__medium-light">О Платформе</p>
+                                             <p class="text__medium-light">Центр карьеры</p>
+                                             <p class="text__medium-light">Отзывы</p>
+                                             <p class="text__medium-light">Контакты</p>
+                                             <p class="text__medium-light">Вакансии</p>
+                                             <p class="text__medium-light">Школа преподавателей</p>
+                                        </div>
+
+                                   </div>
+                                   <div class="col d-flex flex-column">
+                                        <h1 class="fs-5">ВЕБИНАРЫ</h1>
+                                        <div class="d-flex flex-column mt-2">
+                                             <p class="text__medium-light">Все вебинары</p>
+                                             <p class="text__medium-light">Плейлисты</p>
+                                             <p class="text__medium-light">Лицензия</p>
+                                        </div>
+                                   </div>
+                                   <div class="col d-flex flex-column">
+                                        <h1 class="fs-5">ЖУРНАЛ</h1>
+                                        <div class="d-flex flex-column mt-2">
+                                             <p class="text__medium-light">Партнерская программа</p>
+                                             <p class="text__medium-light">Лицензия</p>
+                                             <p class="text__medium-light">Корпоративным клиентам</p>
+                                             <p class="text__medium-light">Для работодателей</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+                    <!-- Bottom Row -->
+                    <div class="row my-4">
+                         <div class="col">
+                              <div class="row">
+                                   <p class="col text__medium-light">Slillbox, 2021
+                                   </p>
+                                   <p class="col text__medium-light"></p>
+                              </div>
+                         </div>
+                         <div class="col d-none d-md-grid">
+                              <div class="row">
+                                   <div class="col">
+                                        <div class="row">
+                                             <p class="col text__medium-light">Договор оферты</p>
+                                             <p class="col text__medium-light">Оплата</p>
+                                        </div>
+                                   </div>
+                                   <p class="col text-center text__medium-light">Правила пользования</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </footer>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+               integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+               crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+               integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+               crossorigin="anonymous"></script>
+
+          <!-- Ionic icon -->
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+          <!-- Swiper -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+               var swiper = new Swiper(".mySwiper", {
+
+                    spaceBetween: 50,
+                    navigation: {
+                         nextEl: ".swiper-button-next",
+                         prevEl: ".swiper-button-prev",
+                    },
+                    slidesPerView: 4,
+                    breakpoints: {
+                         // when window width is >= 320px
+                         320: {
+                              slidesPerView: 2,
+                              spaceBetween: 20
+                         },
+                         // when window width is >= 480px
+                         480: {
+                              slidesPerView: 3,
+                              spaceBetween: 30
+                         },
+                         // when window width is >= 640px
+                         640: {
+                              slidesPerView: 4,
+                              spaceBetween: 40
+                         }
+                    }
+               });
+          </script>
+
+          <script>
+               var swiper = new Swiper(".sliderSwiper", {
+                    pagination: {
+                         el: '.swiper-pagination',
+                         type: "progressbar"
+                    },
+                    spaceBetween: 0,
+                    navigation: {
+                         nextEl: ".swiper-button-next",
+                         prevEl: ".swiper-button-prev",
+                    },
+                    slidesPerView: 5,
+                    breakpoints: {
+                         // when window width is >= 320px
+                         320: {
+                              slidesPerView: 2,
+                              spaceBetween: 20
+                         },
+                         // when window width is >= 480px
+                         480: {
+                              slidesPerView: 3,
+                              spaceBetween: 30
+                         },
+                         // when window width is >= 640px
+                         640: {
+                              slidesPerView: 4,
+                              spaceBetween: 40
+                         }
+                    }
+               });
+          </script>
+          <!-- Cursor animation -->
+          <script type="text/javascript">
+               const cursor = document.querySelector(".cursor");
+               document.addEventListener("mousemove", (e) => {
+                    cursor.style.left = e.pageX + 'px';
+                    cursor.style.top = e.pageY + 'px';
+
+               })
+          </script>
+     </body>
+
+</html>

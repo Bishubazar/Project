@@ -1,6 +1,10 @@
-@forward "./navbar";
-@forward "./header";
-@forward "./category";
-@forward "./course";
-@forward "./banner";
-@forward "./circular";
+@forward './navbar';
+@forward './header';
+@forward './category';
+@forward './course';
+@forward './banner';
+@forward './circular';
+@forward './footer';
+
+@import './information&world';
+@import './news';
