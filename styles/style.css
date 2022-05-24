@@ -313,6 +313,13 @@ h6 {
   grid-template-columns: repeat(4, 1fr);
 }
 
+#category .crystal {
+  top: 70px;
+  left: 0px;
+  width: clamp(50px, 20%, 150px);
+  transform: scale(0.8) rotate(10deg);
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -1245,6 +1252,18 @@ h6 {
 #world {
   margin-top: 100px;
 }
+#world .crystal.c-1 {
+  bottom: -40%;
+  left: -25%;
+  width: clamp(250px, 40%, 800px);
+  filter: blur(2px);
+}
+#world .crystal.c-2 {
+  bottom: -50px;
+  right: 0px;
+  width: clamp(150px, 20%, 200px);
+  filter: blur(2px);
+}
 
 .category__item > .percent {
   width: 100px;
@@ -1328,6 +1347,12 @@ h6 {
   box-shadow: 0px 0px 10px 2px #0057ff;
 }
 
+#progress .crystal {
+  bottom: 0px;
+  left: 0%;
+  width: clamp(150px, 40%, 200px);
+  filter: blur(1px);
+}
 #progress .shadow {
   width: 100%;
   height: 100%;

@@ -7,6 +7,12 @@
 			grid-template-columns: repeat(4, 1fr);
 		}
 	}
+	.crystal {
+		top: 70px;
+		left: 0px;
+		width: clamp(50px, 20%, 150px);
+		transform: scale(0.8) rotate(10deg);
+	}
 }
 .swiper {
 	width: 100%;
