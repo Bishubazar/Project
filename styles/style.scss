@@ -59,8 +59,43 @@ li:hover ~ .cursor {
 	transform: scale(2);
 }
 
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+html::-webkit-scrollbar-track {
+	background-color: red;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #0057ff;
+	// box-shadow: 0px 0px 10px 2px #0057ff;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+	border-radius: 10px;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #0057ff;
+		filter: blur(30px);
+		backdrop-filter: blur(30px);
+	}
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+	background: #23262c;
+}
+
 .crystal {
-	z-index: 1000;
+	z-index: 100;
 	position: absolute;
 	animation: crystalFloating 6s infinite ease;
 	&.c-1 {

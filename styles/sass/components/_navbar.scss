@@ -7,11 +7,12 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 999;
+	z-index: 999 !important;
 	.container-fluid {
 		grid-column: 1 / 13;
 		.navbar-brand {
 			color: $color-white;
+			z-index: 999 !important;
 		}
 		.collapse {
 			&::before {
@@ -34,6 +35,35 @@
 					margin: 0 6px;
 				}
 			}
+		}
+	}
+}
+.navbar-toggler {
+	z-index: 999 !important;
+}
+.navbar-collapse.show {
+	background-color: $color-gray;
+	top: 0;
+	right: 0;
+	position: fixed;
+	padding: 100px 50px;
+	height: 100%;
+	width: 300px;
+	z-index: 998;
+	& ~ body {
+		height: 100vh;
+	}
+	.navbar-nav {
+		li {
+			margin: 10px 0;
+
+			a {
+				font-size: 25px;
+				font: bold;
+			}
+		}
+		.nav__buttons {
+			display: none;
 		}
 	}
 }
